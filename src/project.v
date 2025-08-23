@@ -8,7 +8,7 @@
  * Shows how to add a simple bitmap symbol to the flowing patterns
  */
 `default_nettype none
-module tt_um_vga_example(
+module tt_um_sjsu(
   input  wire [7:0] ui_in,    // Dedicated inputs
   output wire [7:0] uo_out,   // Dedicated outputs
   input  wire [7:0] uio_in,   // IOs: Input path
