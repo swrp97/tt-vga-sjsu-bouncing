@@ -32,8 +32,8 @@ module tt_um_sjsu(
   assign uio_out = 0;
   assign uio_oe  = 0;
   
-  // Suppress unused signals warning
-  wire unused_ok = &{ena, ui_in[7:1], uio_in};  // ui_in[0] is now used for color inversion
+
+ 
   
   // Generate VGA signal, x and y coordinates
   wire [9:0] x;
