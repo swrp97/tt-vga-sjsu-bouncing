@@ -150,7 +150,7 @@ module tt_um_sjsu(
   
   // ===== BACKGROUND PATTERNS (your original code) =====
   reg [15:0] frame_counter;
-  always @(posedge clk) begin
+  always @(posedge clk,  negedge rst_n) begin
     if (~rst_n) begin
       frame_counter <= 0;
     end else begin
