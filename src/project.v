@@ -63,7 +63,7 @@ module tt_um_sjsu(
   parameter MAX_Y = 448;  // 480 - 32
   
   // Update position once per frame (when x=0, y=0)
-  always @(posedge clk) begin
+  always @(posedge clk, , negedge rst_n) begin
     if (~rst_n) begin
       symbol_x <= 10'd50;   // Start near top-left
       symbol_y <= 10'd50;
